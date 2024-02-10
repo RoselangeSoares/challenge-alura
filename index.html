@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho_logo"><img src="assets/Vector.png" alt="logo"></h1>
+    </header>
+
+    <section class="container">
+        <div class="container__texto">
+            <input id="texto" type="text" placeholder="Digite seu texto">
+        </div>
+
+        <div id="conteudo">
+            <!-- <textarea id="resultado" name="texto" rows="4" cols="52" readonly></textarea> -->
+            <input id="resultado" type="texto" readonly>
+            <div id="imagem">
+                <img src="assets/High quality products 1 1.png" alt="pessoa ajoelhada olhando cristal">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que voce deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="button_copiar">
+                <button onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="apresentacao_aviso">
+        <img src="assets/bi_exclamation-circle-fill.png" alt="exclamação">
+        <p>Apenas letras minúsculas e sem acento.</p>
+    </div>
+    <div class="container_button">
+        <button class="button1" onclick="criptografar()">Criptografar</button>
+        <button class="button2" onclick="descriptografar()">Descriptografar</button>
+    </div>
+
+    <footer class="rodape">Roselange Soares, 1 - Janeiro - 2024.</footer>
+</body>
+
+</html>
